@@ -1,0 +1,500 @@
+  134  git commit -m "new branch"
+  135  git branch
+  136  touch file
+  137  git add .
+  138  git commit -m "test2"
+  139  git push origin development 
+  140  git branch QA
+  141  git checkout QA
+  142  touch file1 file2 file3
+  143  ls
+  144  git status
+  145  vim file1
+  146  git add .
+  147  git status
+  148  git push origin QA
+  149  git branch
+  150  git status
+  151  git commit -m "new file in QA"
+  152  git status
+  153  git checkout master 
+  154  ls
+  155  git status
+  156  git merge origin QA
+  157  ls
+  158  git merge QA
+  159  git push origin master 
+  160  git status
+  161  git checkout development 
+  162  git status
+  163  touch dev1
+  164  vi dev1 
+  165  cat dev1 
+  166  git status
+  167  git add .
+  168  git status
+  169  git reset HEAD
+  170  git status
+  171  git add .
+  172  git commit -m "dev file"
+  173  git status
+  174  git reset HEAD ~
+  175  git reset HEAD~
+  176  git status
+  177  git checkout master 
+  178  git status
+  179  git commit -m "test"
+  180  git status 
+  181  git add .
+  182  git sta
+  183  git status 
+  184  git commit -m "test"
+  185  git status 
+  186  git log 
+  187  git log | ls -ltr
+  188  git log
+  189  git reset HEAD~
+  190  git status
+  191  git rm dev1 
+  192  ls
+  193  git add .
+  194  ls
+  195  git rm dev1 
+  196  git status 
+  197  git push origin master 
+  198  ls
+  199  git rm dev1 
+  200  git rm -f dev1 
+  201  ls
+  202  git status
+  203  git push origin master 
+  204  git checkout development 
+  205  git push origin development 
+  206  git status 
+  207  git checkout QA 
+  208  git status
+  209  git push origin QA 
+  210  git merge origin development 
+  211  git merge origin development 
+  212  git checkout development 
+  213  ls
+  214  ls
+  215  git merge origin master 
+  216  ls
+  217  git pull origin master 
+  218  ls
+  219  git status
+  220  ls
+  221  git checkout QA 
+  222  ls
+  223  git pull origin master 
+  224  touch qa1
+  225  git add .
+  226  git commit -m "aq1"
+  227  git status 
+  228  ls
+  229  git checkout master 
+  230  ls
+  231  git merge QA
+  232  ls
+  233  git checkout development 
+  234  ls
+  235  git merge QA
+  236  ls
+  237  git status
+  238  git push origin development 
+  239  git checkout master 
+  240  git push origin master 
+  241  git checkout QA 
+  242  git push origin QA 
+  243  git log 
+  244  ls
+  245  git checkout master 
+  246  ls
+  247  rm qa1
+  248  git status 
+  249  git commit -m "mas"
+  250  git push origin master 
+  251  ls
+  252  git push origin master 
+  253  git revert 1cb2c86cbda4949dfa0b0f3386fa40961240481c
+  254  ls
+  255  git push origin master 
+  256  git status
+  257  git checkout QA 
+  258  ls
+  259  git pull origin QA
+  260  git rm qa1 
+  261  ls
+  262  git push origin QA 
+  263  git pull origin QA 
+  264  ls
+  265  ls
+  266  git push origin QA 
+  267  git commit 
+  268  ls
+  269  ls
+  270  git pull origin QA
+  271  ls
+  272  ls
+  273  git pull origin QA
+  274  ls
+  275  git pull origin QA 
+  276  ls
+  277  git rm -f qa2 
+  278  git status
+  279  git commit -m "removing the files"
+  280  ls
+  281  git push origin QA 
+  282  git init
+  283  ls -la
+  284  git status
+  285  git add .
+  286  git status
+  287  git commit -m "web project is comited"
+  288  git status
+  289  ls
+  290  git rm -rf .git/
+  291  ls
+  292  ls -ls
+  293  git status
+  294  ls -la
+  295  rm -rf .git/
+  296  git status
+  297  exit
+  298  git status
+  299  touch testfile
+  300  vi testfile 
+  301  ls
+  302  git status
+  303  git add .
+  304  git status
+  305  git commit -m "test file deletion"
+  306  git status
+  307  git log
+  308  ls
+  309  git rm testfile 
+  310  ls
+  311  git status 
+  312  git commit -m "test file removed"
+  313  git status
+  314  ls
+  315  git reset HEAD`
+  316  git reset HEAD~
+  317  git status
+  318  git checkout -- testfile
+  319  ls
+  320  git log --oneline --graph --decorate
+  321  git log --since=" 2 days ago"
+  322  git log --since=" 1 days ago"
+  323  ls
+  324  git log --testfile
+  325  git log -- testfile
+  326  zzew=
+  327  git status
+  328  git status
+  329  git status
+  330  git branch
+  331  git checkout -b test
+  332  git branch
+  333  vi file1
+  334  ls
+  335  git status
+  336  git checkout master 
+  337  ls
+  338  git status
+  339  git checkout test 
+  340  ls
+  341  git commit -am "added new file in test branch"
+  342  git status
+  343  git commit -am "testfile"
+  344  git add .
+  345  git commit -m "test file added in test branch"
+  346  git status
+  347  git merge master
+  348  ls
+  349  git checkout master 
+  350  ls
+  351  git merge test
+  352  ls
+  353  vi file1
+  354  git add .
+  355  git commit -m "added lines in master branch"
+  356  git checkout test 
+  357  vi file1
+  358  git add .
+  359  git commit -m "added lines in test env"
+  360  git status
+  361  git checkout master 
+  362  git merge test
+  363  git log
+  364  git log 3
+  365  git help log
+  366  git log master 3
+  367  git log master last 3
+  368  git log master -n 3
+  369  git diff master test
+  370  git diff 5df78af8d00a4a9e88c796fe126698c919cc1389 de35e02859ac1f82ba01de8facc3897b388d9b3b
+  371  git log --graph --decorate --oneline 
+  372  ls
+  373  git rm file2
+  374  git status
+  375  vi file1 
+  376  git commit -am "adding new line in master branch"
+  377  git status
+  378  git checkout test 
+  379  vi file
+  380  ls
+  381  git rm file2
+  382  ls
+  383  vi file1 
+  384  git commit -am "lines added in test env"
+  385  git status 
+  386  git checkout master 
+  387  git merge tes
+  388  git merge test 
+  389  notepad.exe file1 
+  390  git merge test 
+  391  git status
+  392  git commit -am "removed merge conflicts"
+  393  git merge test 
+  394  git status
+  395  git checkout test
+  396  git status
+  397  vi file1 
+  398  git commit -am "adding fifth line in test env"
+  399  git rebase master 
+  400  git status
+  401  git log --graph --decorate --oneline 
+  402  git status 
+  403  git add .
+  404  git rebase master 
+  405  notpad.exe file1 
+  406  notepad.exe file1 
+  407  git add .
+  408  git commit -am "remove conflicts for rebase"
+  409  git status
+  410  git rebase --continue 
+  411  git add/rm file1
+  412  git rebase --continue 
+  413  git add file1 
+  414  git rebase --continue 
+  415  git status
+  416  git rebase --skip 
+  417  git rebase master 
+  418  cat file1 
+  419  git checkout master 
+  420  cat file1 
+  421  git rebase test
+  422  cat file1 
+  423  git log --oneline --decorate --graph 
+  424  git fetch 
+  425  git status
+  426  git fetch origin master
+  427  git fetch
+  428  git fetch origin master
+  429  git pull origin mas
+  430  git pull origin master
+  431  ls
+  432  git push origin master
+  433  git status
+  434  git fetch
+  435  git status
+  436  git checkout master 
+  437  git fetch
+  438  git status
+  439  cat README.md 
+  440  git fetch origin master
+  441  git status
+  442  cat 
+  443  cat README.md 
+  444  git fetch
+  445  git status
+  446  git pull origin master 
+  447  cat README.md 
+  448  git checkout origin/master
+  449  ls
+  450  vi newfile
+  451  git commit -am "adding new file directly on remote master"
+  452  git commit -am "adding new file directly on remote master"
+  453  git add .
+  454  git commit -am "addding new file directly to master origin"
+  455  git push origin master
+  456  git checkout master 
+  457  ls
+  458  git merge origin/master
+  459  ls
+  460  ls
+  461  git merge origin/master
+  462  git checkout origin/master
+  463  ls
+  464  git branch 
+  465  git checkout master 
+  466  git merge HEAD
+  467  ls
+  468  touch testfile
+  469  git commit -am "adding file"
+  470  git commit -am "message"
+  471  git commit -am "message"
+  472  git add .
+  473  git commit -m "adding file"
+  474  git push origin master 
+  475  git branch
+  476  git status
+  477  git checkout master 
+  478  git checkout development 
+  479  git status
+  480  ls
+  481  ls
+  482  touch newfile
+  483  git status
+  484  git stash
+  485  git status
+  486  git stash
+  487  git status
+  488  git add .
+  489  git status
+  490  git stash
+  491  git status
+  492  git checkout master 
+  493  ls
+  494  vi testfile 
+  495  git status
+  496  git add .
+  497  git commit -am "modified files"
+  498  git status
+  499  git checkout development 
+  500  ls
+  501  git stash list
+  502  git merge master
+  503  ls
+  504  git status
+  505  git stash apply 
+  506  git status
+  507  git commit -am "adding my remaining file"
+  508  git push merge master
+  509  git checkout master 
+  510  git merge development 
+  511  ls
+  512  git status
+  513  git stash list
+  514  git stash drop
+  515  git stash list
+  516  git checkout development 
+  517  git stash list
+  518  git log --oneline --graph --decorate --all
+  519  git diff 646a787
+  520  git checkout master 
+  521  git push origin master 
+  522  ls
+  523  git trm newfile testfile
+  524  ls
+  525  git rm newfile 
+  526  git rm testfile 
+  527  git status
+  528  git commit -am "files deleted"
+  529  ls
+  530  touch newfile
+  531  git status
+  532  git stash
+  533  git stash list
+  534  git stash -u
+  535  git stash list
+  536  git stash apply 
+  537  git stash list
+  538  git stash pop
+  539  git stash list
+  540  git stash apply 
+  541  ls
+  542  git status
+  543  git stash list
+  544  git stash drop
+  545  git status
+  546  git add newfile 
+  547  git status
+  548  touch file
+  549  git status
+  550  git stash -a
+  551  git status 
+  552  git stash pop
+  553  git status
+  554  git stash pop
+  555  git status
+  556  git stash -a
+  557  git status
+  558  git stash list
+  559  git stash pop
+  560  git add file 
+  561  git status
+  562  git commit -am "adding nee file"
+  563  git status
+  564  ls
+  565  git push origin master 
+  566  git pull origin master 
+  567  ls
+  568  git rm mergefile 
+  569  git rm file 
+  570  git rm newfile 
+  571  ls
+  572  git commit -am "removing all files"
+  573  git push origin master 
+  574  git status
+  575  touch file1
+  576  git stash -u
+  577  git status
+  578  touch file2
+  579  git stash -u
+  580  touch file3
+  581  git stash -u
+  582  git stash list
+  583  git stash show stash@{0}
+  584  git stash apply stash@{0}
+  585  git stash clear
+  586  git status
+  587  git status
+  588  git rm file3 
+  589  ls
+  590  rm file3 
+  591  ls
+  592  git status
+  593  git status
+  594  git branch
+  595  git checkout development 
+  596  git status
+  597  git checkout master 
+  598  git push origin master 
+  599  history 
+  600  git stats
+  601  git status
+  602  git branch
+  603  git branch -d development 
+  604  git branch
+  605  ls
+  606  touch file1
+  607  git add file1 
+  608  touch file2
+  609  ls
+  610  vi README.md 
+  611  git status
+  612  git stash branch newbranch
+  613  git branch
+  614  git stash -a
+  615  git stash branch newbranch
+  616  git status
+  617  git branch 
+  618  git checkout master 
+  619  git status
+  620  git checkout newbranch 
+  621  git status
+  622  rm file2
+  623  git status
+  624  git checkout master 
+  625  git status
+  626  git merge newbranch 
+  627  git branch -d newbranch 
+  628  git status
+  629  git commit -am "adding new files"
+  630  git status
+  631  ls
+  632  history 
+  633  history > newfile
